@@ -1,9 +1,9 @@
 name: Upload Python Package
 
 on:
-  release:
-    types: [published]
-    branches: [ ftr/starter ] 
+  push:
+    branches:
+      - ftr/starter
 
 permissions:
   contents: read
