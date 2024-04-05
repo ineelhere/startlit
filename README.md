@@ -56,3 +56,11 @@ st.title('Hello, World! 🌎🚀')
 # Add a description with an inline comment
 st.write("This is my first app in Streamlit! 📝")  # Comment: Don't forget to smile
 ```
+
+___
+
+
+**© `Indraneel Chakraborty` | 2024** 🧑‍💻[ Email](mailto:hello.indraneel@gmail.com) | [LinkedIn](https://www.linkedin.com/in/indraneelchakraborty/) | [GitHub](https://github.com/ineelhere)
+
+
+`Collaborations and Contributions are welcome 🤝`
