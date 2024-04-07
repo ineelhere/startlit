@@ -1,4 +1,5 @@
 import urllib.request
+import os
 
 def hello():
     """
@@ -28,6 +29,7 @@ def multipage():
     """
     urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/multipage/1_Home_Page.py", "1_Home_Page.py")
     urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/starter/requirements.txt", "requirements.txt")
+    os.mkdir("pages")
     urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/multipage/pages/1_Page_1.py", "pages/1_Page_1.py")
     urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/multipage/pages/2_Page_2.py", "pages/2_Page_2.py")
     urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/multipage/pages/3_Page_3.py", "pages/3_Page_3.py")
