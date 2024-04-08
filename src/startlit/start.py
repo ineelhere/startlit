@@ -12,7 +12,7 @@ def help():
     """
     A function that prints a list of available commands to the console.
     """
-    print("Available commands:\n🤗 hello()\n📥 starter()\n📥 multipage()\n📚 help()\n🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues")
+    print("Available commands:\n🤗 hello()\n📥 starter()\n📥 multipage()\n📚 fragments()\n🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues")
 
 def starter():
     """

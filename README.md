@@ -1,4 +1,4 @@
-# StartLit
+# StartLit ⭐
 
 **Welcome to StartLit!**
 
