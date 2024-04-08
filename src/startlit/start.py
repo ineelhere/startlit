@@ -12,7 +12,7 @@ def help():
     """
     A function that prints a list of available commands to the console.
     """
-    print("Available commands:\n🤗 hello()\n📥 starter()\n📥 multipage()\n📚 help()\n🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues")
+    print("Available commands:\n🤗 hello()\n📥 starter()\n📥 multipage()\n📚 fragments()\n🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues")
 
 def starter():
     """
@@ -36,3 +36,12 @@ def multipage():
     urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/multipage/pages/4_Page_4.py", "pages/4_Page_4.py")    
     print("📥 Multipage app downloaded!📥\n👀 Look for the files in your working directory 👀")
     print("💡 Visit https://startlit-multipage.streamlit.app/ for a quick look to the multipage app")
+
+def fragments():
+    """
+    A function to download the fragments app files from a specified URL and print a confirmation message.
+    """
+    urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/fragments/app.py", "app.py")
+    urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/starter/requirements.txt", "requirements.txt")
+    print("📥 Fragments app downloaded!📥\n👀 Look for 'app.py' and 'requirements.txt' file in your working directory 👀")
+    print("💡 Visit https://startlit-fragments.streamlit.app/ for a quick look to the deployed app")
