@@ -11,24 +11,24 @@ with col1:
     st.markdown("## 🚀 Using st.experimental_fragment", unsafe_allow_html=True)
 
     @st.experimental_fragment   # This decorator marks a function to run in isolation
-    def simple_charts():
-        st.markdown("### 📊 Bar Chart 1", unsafe_allow_html=True)
-        val11 = st.slider("Number of bars for Bar Chart1 📏", 1, 20, 4)
+    def area_chart_fragment():
+        st.markdown("### 📈 Area Chart 1", unsafe_allow_html=True)
+        val11 = st.slider("Number of points for Area Chart 1 📏", 1, 20, 15)
         data = [random.random() for _ in range(val11)]
-        st.bar_chart(data)
+        st.area_chart(data, use_container_width=True, color="#666699")  # Using hex representation for green
 
-    simple_charts()
+    area_chart_fragment()
 
 with col2:
     st.markdown("## 🛠️ Without st.experimental_fragment", unsafe_allow_html=True)
 
-    def simple_charts1():
-        st.markdown("### 📊 Bar Chart 2", unsafe_allow_html=True)
-        val = st.slider("Number of bars for Bar Chart2 📏", 1, 20, 4)
+    def area_chart_no_fragment():
+        st.markdown("### 📈 Area Chart 2", unsafe_allow_html=True)
+        val = st.slider("Number of points for Area Chart 2 📏", 1, 20, 15)
         data = [random.random() for _ in range(val)]
-        st.bar_chart(data)
+        st.area_chart(data, use_container_width=True, color="#b30059")  # Using hex representation for blue
 
-    simple_charts1()
+    area_chart_no_fragment()
 
 st.markdown("""
         `st.experimental_fragment` is a game-changing feature in Streamlit that unlocks new freedoms, efficiencies, and possibilities for developers. With this innovative addition, Streamlit continues to pave the way for creating dynamic and interactive web apps with ease.
