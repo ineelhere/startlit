@@ -1,1 +1,1 @@
-from .start import hello, starter, help
+from .start import hello, starter, help, multipage
