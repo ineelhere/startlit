@@ -11,8 +11,8 @@ StartLit is your gateway to building Streamlit apps with ease. It brings a simpl
 -  **Starter App**: Use the `starter()` function to download a very simple starter app template, including an `app.py` file and a `requirements.txt` file.
 -  **Multipage App**: Use the `multipage()` function to download an app template for building multipage Streamlit apps. The files/folders will be available in your working directory.
 -  **Fragments App**: Use the `fragments()` function to download an app that allows you to run independent components in the streamlit app.
-
-
+-  **List active streamlit apps** - Use the `list_streamlit_apps()` function to get a list of currently running
+-  **Kill active streamlit apps** - Use the `kill_streamlit_apps(app_id)` function to kill desired running streamlit apps. `app_id` is the app ID you get from the `list_streamlit_apps()` function.
 
 ### Install the package from PYPI
 
@@ -85,6 +85,12 @@ multipage()
 
 # Download a fragment app template
 fragments()
+
+# List all active apps
+list_streamlit_apps()
+
+# Kill a specific app
+kill_streamlit_apps(app_id)
 
 
 ```
