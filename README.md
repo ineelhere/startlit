@@ -1,4 +1,5 @@
 # StartLit ⭐
+![PyPI - Version](https://img.shields.io/pypi/v/startlit) ![GitHub repo size](https://img.shields.io/github/repo-size/ineelhere/startlit) ![GitHub License](https://img.shields.io/github/license/ineelhere/startlit) ![example workflow](https://github.com/ineelhere/startlit/actions/workflows/python-publish.yml/badge.svg) 
 
 **Welcome to StartLit!**
 
