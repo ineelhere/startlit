@@ -8,15 +8,15 @@ StartLit is your gateway to building Streamlit apps with ease. It brings a simpl
 #### Features:
 - **Package Installation**: Now you can easily install StartLit from PYPI using `pip install startlit`.
 
-- 🤗 `hello()` - Just a welcome text. 
-- 📥 `starter()` - A very simple starter app template. Quick-peek: https://startlit-starter.streamlit.app/
-- 📃 `multipage()` - An app template for building multipage Streamlit apps. Quick-peek: https://startlit-multipage.streamlit.app/
-- 📚 `fragments()` - An app that allows you to run independent components in the streamlit app. Quick-peek: https://startlit-fragments.streamlit.app/
-- 💬 `chat()`- A dummy chatbot app. Quick-peek: https://startlit-chat.streamlit.app/
-- 📜 `list_streamlit_apps()` - List running Streamlit apps.
-- 🔪 `kill_streamlit_apps()` - Kill running Streamlit apps.
-- 💡 `help()` - Display help menu with list of available functions.
-- 🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues
+* 🤗 `hello()` - Just a welcome text. 
+* 📥 `starter()` - A very simple starter app template. Quick-peek: https://startlit-starter.streamlit.app/
+* 📃 `multipage()` - An app template for building multipage Streamlit apps. Quick-peek: https://startlit-multipage.streamlit.app/
+* 📚 `fragments()` - An app that allows you to run independent components in the streamlit app. Quick-peek: https://startlit-fragments.streamlit.app/
+* 💬 `chat()`- A dummy chatbot app. Quick-peek: https://startlit-chat.streamlit.app/
+* 📜 `list_streamlit_apps()` - List running Streamlit apps.
+* 🔪 `kill_streamlit_apps()` - Kill running Streamlit apps.
+* 💡 `help()` - Display help menu with list of available functions.
+* 🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues
 
 ### Install the package from PYPI
 
