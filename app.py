@@ -5,13 +5,21 @@ import time
 
 # Streamed response emulator
 def response_generator():
-    response = random.choice(
-        [
-            "Hello there! How can I assist you today?",
-            "Hi, human! Is there anything I can help you with?",
-            "Do you need help?",
-        ]
-    )
+   response = random.choice(
+    [
+        "Hello there! How can I assist you today?",
+        "Hi, human! Is there anything I can help you with?",
+        "Do you need help?",
+        "Hey! What can I do for you today?",
+        "Greetings! How can I be of service?",
+        "Good to see you! What do you need help with?",
+        "Hi! Is there anything on your mind today?",
+        "Welcome! Let me know how I can help you.",
+        "Hi! What's on your mind?",
+        "Hey there! What can I do to assist you?",
+    ]
+)
+
     for word in response.split():
         yield word + " "
         time.sleep(0.05)
