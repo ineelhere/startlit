@@ -8,12 +8,6 @@ def hello():
     """
     print("Hello there 👋 \nWelcome to Startlit! 🚀")
 
-def help():
-    """
-    A function that prints a list of available commands to the console.
-    """
-    print("Available commands:\n🤗 hello()\n📥 starter()\n📥 multipage()\n📚 fragments()\n🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues")
-
 def starter():
     """
     A function to download the starter app files from a specified URL and print a confirmation message.
