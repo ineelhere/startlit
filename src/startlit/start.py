@@ -39,3 +39,12 @@ def fragments():
     urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/starter/requirements.txt", "requirements.txt")
     print("📥 Fragments app downloaded!📥\n👀 Look for 'app.py' and 'requirements.txt' file in your working directory 👀")
     print("💡 Visit https://startlit-fragments.streamlit.app/ for a quick look to the deployed app")
+
+def chat():
+    """
+    A function to download a simple dummy chat app from a specified URL and print a confirmation message.
+    """
+    urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/chat/app.py", "app.py")
+    urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/starter/requirements.txt", "requirements.txt")
+    print("📥 Chat app downloaded!📥\n👀 Look for 'app.py' and 'requirements.txt' file in your working directory 👀")
+    print("💡 Visit https://startlit-chat.streamlit.app/ for a quick look to the deployed app")
