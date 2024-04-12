@@ -8,12 +8,6 @@ def hello():
     """
     print("Hello there 👋 \nWelcome to Startlit! 🚀")
 
-def help():
-    """
-    A function that prints a list of available commands to the console.
-    """
-    print("Available commands:\n🤗 hello()\n📥 starter()\n📥 multipage()\n📚 fragments()\n🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues")
-
 def starter():
     """
     A function to download the starter app files from a specified URL and print a confirmation message.
@@ -45,3 +39,12 @@ def fragments():
     urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/starter/requirements.txt", "requirements.txt")
     print("📥 Fragments app downloaded!📥\n👀 Look for 'app.py' and 'requirements.txt' file in your working directory 👀")
     print("💡 Visit https://startlit-fragments.streamlit.app/ for a quick look to the deployed app")
+
+def chat():
+    """
+    A function to download a simple dummy chat app from a specified URL and print a confirmation message.
+    """
+    urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/chat/app.py", "app.py")
+    urllib.request.urlretrieve("https://raw.githubusercontent.com/ineelhere/startlit/starter/requirements.txt", "requirements.txt")
+    print("📥 Chat app downloaded!📥\n👀 Look for 'app.py' and 'requirements.txt' file in your working directory 👀")
+    print("💡 Visit https://startlit-chat.streamlit.app/ for a quick look to the deployed app")
