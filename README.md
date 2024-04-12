@@ -1,5 +1,5 @@
 # StartLit ⭐
-![PyPI - Version](https://img.shields.io/pypi/v/startlit) ![GitHub repo size](https://img.shields.io/github/repo-size/ineelhere/startlit) ![GitHub License](https://img.shields.io/github/license/ineelhere/startlit) ![example workflow](https://github.com/ineelhere/startlit/actions/workflows/python-publish.yml/badge.svg) 
+![PyPI - Version](https://img.shields.io/pypi/v/startlit?style=plastic) ![GitHub License](https://img.shields.io/github/license/ineelhere/startlit?style=plastic) ![PyPI - Downloads](https://img.shields.io/pypi/dm/startLit?style=plastic&logoColor=blue&color=blue) ![example workflow](https://github.com/ineelhere/startlit/actions/workflows/python-publish.yml/badge.svg?style=plastic) 
 
 **Welcome to StartLit!**
 
@@ -7,13 +7,16 @@ StartLit is your gateway to building Streamlit apps with ease. It brings a simpl
 
 #### Features:
 - **Package Installation**: Now you can easily install StartLit from PYPI using `pip install startlit`.
-- **Simple Usage**: Import the package and run `hello()` to receive a friendly welcome message.
-- **Basic help**: Use the `help()` function to get started with more support
--  **Starter App**: Use the `starter()` function to download a very simple starter app template, including an `app.py` file and a `requirements.txt` file.
--  **Multipage App**: Use the `multipage()` function to download an app template for building multipage Streamlit apps. The files/folders will be available in your working directory.
--  **Fragments App**: Use the `fragments()` function to download an app that allows you to run independent components in the streamlit app.
--  **List active streamlit apps** - Use the `list_streamlit_apps()` function to get a list of currently running
--  **Kill active streamlit apps** - Use the `kill_streamlit_apps(app_id)` function to kill desired running streamlit apps. `app_id` is the app ID you get from the `list_streamlit_apps()` function.
+
+* 🤗 `hello()` - Just a welcome text. 
+* 📥 `starter()` - A very simple starter app template. Quick-peek: https://startlit-starter.streamlit.app/
+* 📃 `multipage()` - An app template for building multipage Streamlit apps. Quick-peek: https://startlit-multipage.streamlit.app/
+* 📚 `fragments()` - An app that allows you to run independent components in the streamlit app. Quick-peek: https://startlit-fragments.streamlit.app/
+* 💬 `chat()`- A dummy chatbot app. Quick-peek: https://startlit-chat.streamlit.app/
+* 📜 `list_streamlit_apps()` - List running Streamlit apps.
+* 🔪 `kill_streamlit_apps()` - Kill running Streamlit apps.
+* 💡 `help()` - Display help menu with list of available functions.
+* 🐙 Need more help? Post an issue at https://github.com/ineelhere/startlit/issues
 
 ### Install the package from PYPI
 
@@ -87,24 +90,26 @@ multipage()
 # Download a fragment app template
 fragments()
 
+# Download a dummy chatbot app template
+chat()
+
 # List all active apps
 list_streamlit_apps()
 
-# Kill a specific app
+# Kill a specific app by app_id
 kill_streamlit_apps(app_id)
-
-
 ```
 ___
 
 ### Feedback and Contribution:
-Excited to hear your feedback and suggestions for improvements. 
+Excited to hear your feedback and suggestions for improvements.
+
+Collaborations and Contributions are welcome 🤝
 Feel free to open issues or submit pull requests.
 
 Enjoy your streamlit journey with StartLit and happy coding! 🚀🎉
+
+*Check package download stats at https://pypistats.org/packages/startlit*
 ___
 
 **© `Indraneel Chakraborty` | 2024** 🧑‍💻[LinkedIn](https://www.linkedin.com/in/indraneelchakraborty/) | [X/Twitter](https://twitter.com/ineelhere)
-
-
-`Collaborations and Contributions are welcome 🤝`
