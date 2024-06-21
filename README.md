@@ -13,6 +13,7 @@ StartLit is your gateway to building Streamlit apps with ease. It brings a simpl
 * 📃 `multipage()` - An app template for building multipage Streamlit apps. Quick-peek: https://startlit-multipage.streamlit.app/
 * 📚 `fragments()` - An app that allows you to run independent components in the streamlit app. Quick-peek: https://startlit-fragments.streamlit.app/
 * 💬 `chat()`- A dummy chatbot app. Quick-peek: https://startlit-chat.streamlit.app/
+* ❄️ `snowflake_demo_app("app_keyword","destination_directory")` - Download demos for streamlit apps on snowflake. Quick-peek: https://github.com/Snowflake-Labs/snowflake-demo-streamlit
 * 📜 `list_streamlit_apps()` - List running Streamlit apps.
 * 🔪 `kill_streamlit_apps()` - Kill running Streamlit apps.
 * 💡 `help()` - Display help menu with list of available functions.
@@ -100,6 +101,47 @@ list_streamlit_apps()
 kill_streamlit_apps(app_id)
 ```
 ___
+### Snowflake Demo Apps
+
+#### Usage
+
+```python
+app_keyword = "chat_app"
+destination_directory = "./folder"
+snowflake_demo_app(app_keyword, destination_directory)
+```
+Output 
+```log
+Cloning from https://github.com/Snowflake-Labs/snowflake-demo-streamlit.git 📦
+Using the main branch 🌿
+Target directory created: ./folder 🛠️
+Fetched folder: Chat app using Snowflake Cortex 📁
+Fetched LICENSE file 📜
+Fetched README.md file 📖
+Demo app files fetched successfully to /content/folder 🎉🎊
+Please make sure to read the README.md 📖 and LICENSE 📜 files for important information.
+```
+
+The following table lists the app keywords (used in the above example) and their corresponding folder names in the repository:
+
+| Keyword                   | Folder Description                                       |
+|---------------------------|----------------------------------------------------------|
+| chat_app                  | Chat app using Snowflake Cortex                          |
+| email_generator           | LLM Email Generator                                      |
+| ci_demo                   | Continuous Integration - Summit Demo                     |
+| customer_engagement       | Customer Engagement App                                  |
+| rag                       | Retrieval Augmented Generation (RAG)                     |
+| external_access_chat_app  | External Access: Chat app using 3rd party LLM            |
+| github_insights           | Github Popularity Insights                               |
+| h3_mapping                | H3 Mapping and Timeseries Visualization                  |
+| sql_optimizer             | SQL Query Optimizer App using Snowflake Cortex           |
+| inventory_tracker         | Inventory Tracker                                        |
+| usage_monitoring          | Streamlit in Snowflake Usage Monitoring                  |
+| metrics_app               | Key Metrics App                                          |
+| retention_analytics       | User Retention Analytics App                             |
+| language_insights         | Language Usage Insights                                  |
+| data_io                   | Writing and reading data back to Snowflake               |
+
 
 ### Feedback and Contribution:
 Excited to hear your feedback and suggestions for improvements.
