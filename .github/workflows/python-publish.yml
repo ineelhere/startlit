@@ -32,7 +32,7 @@ jobs:
         id: pypi
         run: |
           echo "Fetching latest version from PyPI for $PACKAGE_NAME"
-          LATEST_VERSION=$(python -c "import requests, sys; from packaging import version; response = requests.get(f'https://pypi.org/pypi/{os.getenv('PACKAGE_NAME')}/json'); data = response.json(); print(data['info']['version']) if 'info' in data else sys.exit(1)")
+          LATEST_VERSION=$(python -c "import requests, sys, os; from packaging import version; response = requests.get(f'https://pypi.org/pypi/{os.getenv('PACKAGE_NAME')}/json'); data = response.json(); print(data['info']['version']) if 'info' in data else sys.exit(1)")
           echo "LATEST_VERSION=$LATEST_VERSION" >> $GITHUB_ENV
       - name: Get the current version from pyproject.toml
         id: current_version
