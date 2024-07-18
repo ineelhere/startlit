@@ -3,7 +3,7 @@ name: build and publish
 on:
   push:
     branches:
-      - main
+      - '**'
 
 permissions:
   contents: read
@@ -22,10 +22,27 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install poetry
+          pip install poetry requests packaging
+      - name: Fetch the latest version from PyPI
+        id: pypi
+        run: |
+          PACKAGE_NAME=$(poetry version --short)
+          echo "PACKAGE_NAME=$PACKAGE_NAME" >> $GITHUB_ENV
+          LATEST_VERSION=$(python -c "import requests; from packaging import version; response = requests.get(f'https://pypi.org/pypi/$PACKAGE_NAME/json'); print(response.json()['info']['version'])")
+          echo "LATEST_VERSION=$LATEST_VERSION" >> $GITHUB_ENV
+      - name: Get the current version from pyproject.toml
+        id: current_version
+        run: |
+          CURRENT_VERSION=$(poetry version --short)
+          echo "CURRENT_VERSION=$CURRENT_VERSION" >> $GITHUB_ENV
+      - name: Compare versions
+        id: compare_versions
+        run: |
+          python -c "import os; from packaging import version; current = version.parse(os.getenv('CURRENT_VERSION')); latest = version.parse(os.getenv('LATEST_VERSION')); exit(0) if current > latest else exit(1)"
       - name: Build package
         run: poetry build
       - name: Publish package
+        if: github.ref == 'refs/heads/main' && steps.compare_versions.outcome == 'success'
         uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
         with:
           user: __token__
