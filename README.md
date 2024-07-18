@@ -1,5 +1,6 @@
 # StartLit ⭐
 ![PyPI - Version](https://img.shields.io/pypi/v/startlit?style=plastic) ![GitHub License](https://img.shields.io/github/license/ineelhere/startlit?style=plastic) ![PyPI - Downloads](https://img.shields.io/pypi/dm/startLit?style=plastic&logoColor=blue&color=blue) ![example workflow](https://github.com/ineelhere/startlit/actions/workflows/python-publish.yml/badge.svg?style=plastic) 
+![image](https://github.com/user-attachments/assets/55c9c269-dd7f-4f7d-8eca-00f2290f3c7d)
 
 **Welcome to StartLit!**
 
